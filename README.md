@@ -5,6 +5,7 @@
 ### current tags
 + `nvim-noetic:beta-1` -- only integrate neovim inside ros-noetic-desktop-full
 + `nvim-noetic:elemap` -- based on beta-1, install minial dependencies for building elevation_mapping
++ `nvim-noetic:elemapbuilt` -- based on elemap, build elevation_mapping from inside
 
 ### beta-1 tag
 
@@ -42,3 +43,8 @@ to open more bash shell session:
 ### elemap tag
 
 Noting more but installing `elevation_mapping` system level dependencies(kindr, kindr_ros, message_logger not included).
+
+### elemapbuilt tag
+
+Clone elevation_mapping and its package level dependencies inside the docker image and map user's custom folder to
+a subfolder inside `/elemapws/src/` of a container.
